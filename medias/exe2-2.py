@@ -26,8 +26,6 @@ print(f"Soma: -> {soma:.1f}")
 media = (1 / 9) * soma
 print(f"Média: -> {media:.1f}")
 """
-
-
 import time
 
 
