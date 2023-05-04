@@ -14,6 +14,7 @@ https://code.visualstudio.com/
 Extensões para Visual Studio Code:
 Python
 
+### Opcional
 Após a instalação do Python, Visual Studio Code e das extensões, com o Visual Studio Code aberto abra o terminal pressionando `Ctrl+J` e crie um ambiente virtual:
 
 `python -m venv venv` 
