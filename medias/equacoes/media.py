@@ -1,8 +1,4 @@
-def calula_somatorio(dados):
-    soma = 0
-    for valor in dados:
-        soma = soma + valor
-    return soma
+from .somatorio import calula_somatorio
 
 
 def calcula_media(dados):
