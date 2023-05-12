@@ -1,5 +1,8 @@
+import math
+
 from equacoes.media import calcula_media
 from equacoes.mediana import calcula_mediana
+from equacoes.variancia import calcula_variancia
 
 lista_dados = [
     3.4,
@@ -31,3 +34,11 @@ print(f"Mediana: {mediana:.2f}")
 # calcular a amplitude
 amplitude = max(lista_dados) - min(lista_dados)
 print(f"Amplitude: {amplitude:.2f}")
+
+# calcular a variância
+variancia = calcula_variancia(lista_dados)
+print(f"Variância: {variancia:.2f}")
+
+# desvio padrão - raiz quadrada da variancia
+desvio_padrao = math.sqrt(variancia)
+print(f"Desvio padrão: {desvio_padrao:.2f}")
