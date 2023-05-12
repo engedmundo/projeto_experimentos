@@ -27,3 +27,7 @@ print(f"Média: {media:.2f}")
 
 mediana = calcula_mediana(lista_dados)
 print(f"Mediana: {mediana:.2f}")
+
+# calcular a amplitude
+amplitude = max(lista_dados) - min(lista_dados)
+print(f"Amplitude: {amplitude:.2f}")
