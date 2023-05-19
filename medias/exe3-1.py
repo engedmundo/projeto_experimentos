@@ -20,5 +20,7 @@ area_cauda_superior = 0.0951  # Veio da tabela A1
 
 area_central = 1 - area_cauda_inferior - area_cauda_superior
 probabilidade = area_central * 100
-print(f"Probabilidade de retirar um grao de feijão entre {peso_minimo}g e {peso_maximo}g")
+print(
+    f"Probabilidade de retirar um grao de feijão entre {peso_minimo}g e {peso_maximo}g"
+)
 print(f"Probabilidade {probabilidade:.2f}%")
