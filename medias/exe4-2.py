@@ -76,3 +76,15 @@ valor_p = valor_p_unicaudal * 2
 print(f"Valor P: {valor_p:.4f}")
 probabilidade = valor_p * 100
 print(f"Probabilidade de {probabilidade:.2f}%")
+
+"""
+Ponto de corte geralmente 0.05
+Se valor P for menor do 0.05 deve-se rejeitar a hipótese nula
+h0 diz que as médias são iguais
+Rejeitar a hipótese nula significa dizer que as médias
+são DIFERENTES!!!!!
+
+Se a diferença entre as médias é estatisticamente significativa
+existe efeito da formulação na resistência a tração 
+do material estudado.
+"""
