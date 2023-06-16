@@ -89,7 +89,7 @@ desvios_global = calcula_desvios(
 sq_total = calula_somatorio(desvios_global)  # Soma dos Quadrados total
 
 """
-SQpotencia = 4 *[(551.2 - 617.75)² + (587.4 - 617.75)²+..]
+SQpotencia = 5 *[(551.2 - 617.75)² + (587.4 - 617.75)²+..]
 """
 medias = [media_160, media_180, media_200, media_220]
 desvios_potencia = calcula_desvios(
@@ -97,11 +97,11 @@ desvios_potencia = calcula_desvios(
     media=media_global,
 )
 soma_potencia = calula_somatorio(desvios_potencia)
-sq_potencia = len(medias) * soma_potencia
+sq_potencia = len(pot_160) * soma_potencia
 sq_erros = sq_total - sq_potencia
 
 print(f"SQpotencia: {sq_potencia:.3f}")
-print(f"SQerros:    {sq_erros:.3f}")
+print(f"SQerros:     {sq_erros:.3f}")
 print(f"SQtotal:    {sq_total:.3f}")
 print()
 
