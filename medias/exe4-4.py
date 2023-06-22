@@ -101,4 +101,6 @@ efeito_material / 2 * nivel_material * efeito_interacao / 2 * nivel_material * n
 niveis são -1 e 1 de cada fator
 
 chega nos valores da media de cada combinação
+
+Para fazer ANOVA, usar JAMOVI
 """
