@@ -64,3 +64,41 @@ print(f"Média: {media_niobio_51:.2f} horas")
 print(f"Variância: {variancia_niobio_51:.2f} horas²")
 print(f"Desvio Padrão: {desvio_padrao_niobio_51:.2f} horas")
 print()
+
+
+# Cálculo dos efeitos:
+ab = media_litio_10
+Ab = media_niobio_10
+aB = media_litio_51
+AB = media_niobio_51
+
+# Efeito do material
+efeito_material = (((Ab + AB) / 2) - ((ab + aB) / 2))
+
+# Efeito da temperatura
+efeito_temperatura = (((aB + AB) / 2) - ((ab + Ab) / 2))
+
+# Efeito da interação
+efeito_interacao = ((AB - aB) - (Ab - ab)) / 2
+
+print(f"Efeito da temperatura: {efeito_temperatura:.2f} horas")
+print(f"Efeito da material: {efeito_material:.2f} horas")
+print(f"Efeito da interação: {efeito_interacao:.2f} horas")
+print()
+
+# todos os dados
+todos_dados = [*dados_litio_10, *dados_litio_51, *dados_niobio_10, *dados_niobio_51]
+media_geral = calcula_media(todos_dados)
+print(f"Média geral: {media_geral:.2f} horas")
+print()
+
+"""
+# Equação de efeitos:
+tempo = media_geral + efeito_temperatura / 2 * nivel_temperatura +
+efeito_material / 2 * nivel_material * efeito_interacao / 2 * nivel_material * nivel_temperatura
++ erro_aleatorio
+
+niveis são -1 e 1 de cada fator
+
+chega nos valores da media de cada combinação
+"""
