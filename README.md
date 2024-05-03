@@ -21,6 +21,8 @@ Python, Jupyter
 Jupyter Notebook:
 https://jupyter.org/install
 
+https://medium.com/horadecodar/como-instalar-o-jupyter-notebook-windows-e-linux-20701fc583c
+
 ## Chat GPT
 O Chat GPT é uma ferramenta que pode auxiliar e muito o aprendizado com ferramentas de desenvolvimento. É possível pedir dicas de resolução ou para que ele faça uma análise do que está acontecendo com o código criado.
 
