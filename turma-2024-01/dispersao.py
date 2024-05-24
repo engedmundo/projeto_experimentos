@@ -39,3 +39,16 @@ print(f"Soma dos desvios: {soma_dos_desvios:.4f}")
 massa_df["Quadrado Desvio"] = massa_df["Desvio"] ** 2
 soma_quadrado_desvios = massa_df["Quadrado Desvio"].sum()
 print(f"Soma quadrado desvios: {soma_quadrado_desvios:.4f} g²")
+
+# calcular a variância
+qtd_valores = massa_df["Massa"].count() # N da equação
+variancia = (1 / (qtd_valores - 1)) * soma_quadrado_desvios
+print(f"Variância: {variancia:.6f}")
+
+variancia_2 = massa_df["Massa"].var()
+print(f"Variância 2: {variancia_2:.6f} g²")
+
+# calcular o desvio padrão
+desvio_padrao = massa_df["Massa"].std()
+print(f"Desvio padrão: {desvio_padrao:.4f} g")
+massa_df
